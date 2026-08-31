@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>StartGameServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.StartGameServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SaveScoreServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.SaveScoreServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PlayerServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.PlayerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StartGameServlet</servlet-name>
+        <url-pattern>/StartGameServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SaveScoreServlet</servlet-name>
+        <url-pattern>/SaveScoreServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PlayerServlet</servlet-name>
+        <url-pattern>/PlayerServlet.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
